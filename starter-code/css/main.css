@@ -160,8 +160,7 @@ nav {
 }
 
 .btn {
-    width: 15rem;
-    height: 15rem;
+    padding: 3rem;
     border-radius: 50%;
     border: none;
     background: white;
@@ -173,6 +172,7 @@ nav {
     transition: outline-color 0.75s ease , color 0.5s ease;
     outline-color: transparent;
     outline: 90px solid transparent;
+    aspect-ratio: 1/1;
 }
 
 .btn:hover {
@@ -205,4 +205,8 @@ nav {
     .line {
         display: none;
     }
+}
+
+@media  (max-width: 668px) {
+    
 }
