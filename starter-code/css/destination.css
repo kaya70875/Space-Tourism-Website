@@ -1,0 +1,142 @@
+.destination{
+    background: url('../assets/destination/background-destination-desktop.jpg');
+    justify-content: start;
+}
+
+.destination-header {
+    padding: 1rem 0 1rem 9rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.destination-header h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.destination-header span {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2px;
+    opacity: 0.5;
+}
+
+.destination-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 3rem;
+    margin-top: 5rem;
+}
+
+.destination-info {
+    display: flex;
+    flex-direction: column;
+    gap : 2rem;
+}
+
+.destination-picker {
+    display: flex;
+    gap : 2rem;
+    list-style: none;
+}
+
+.destination-picker li {
+    cursor: pointer;
+    position: relative;
+}
+
+.destination-picker li::before {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.destination-picker li:hover::before {
+    opacity: 0.5;
+}
+
+.destination-picker li.active::before {
+    opacity: 1;
+}
+
+.destination-picker li a {
+    text-decoration: none;
+    color : white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 100;
+    font-size : 1.3rem;
+}
+
+.planet-name h2 {
+    font-size: 7rem;
+    font-weight: 300;
+    font-family: 'Bellefair', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.planet-info {
+    max-width: 30rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+    opacity: 0.9;
+    color : white;
+    letter-spacing: 1px;
+}
+
+.planet-bottom-wrapper {
+    display: flex;
+    gap : 3rem;
+}
+
+.distance {
+    display: flex;
+    flex-direction: column;
+    gap : 0.75rem;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    gap : 0.75rem;
+}
+
+.distance p  , .time p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.distance h2 , .time h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+    color : white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.line-2 {
+    width: 100%;
+    height: 1px;
+    border : none;
+    background: white;
+    z-index : 999;
+    opacity: 0.2;
+}

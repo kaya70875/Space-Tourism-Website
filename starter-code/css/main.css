@@ -6,9 +6,8 @@
 }
 
 body {
-    background: url('../assets/home/background-home-desktop.jpg');
-    background-size: cover;
     color : white;
+    overflow: hidden;
 }
 
 main {
@@ -18,7 +17,8 @@ main {
     flex-direction: column;
     justify-content: space-between;
 
-    
+    background: url('../assets/home/background-home-desktop.jpg');
+    background-size: cover;
 }
 
 nav {
@@ -85,6 +85,10 @@ nav {
     transition: opacity 0.5s ease;
     opacity: 0;
 }
+
+#content {
+    transition: opacity 0.5s ease;
+}  
 
 .nav-section ul li:hover::before {
     opacity: 0.5;
