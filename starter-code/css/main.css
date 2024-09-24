@@ -181,3 +181,28 @@ nav {
     outline-offset: 0px;
     color : rgba(0, 0, 0, 0.651);
 }
+
+/* Tablet Design */
+
+@media (max-width: 980px) {
+    .article-wrapper {
+        margin-top: -3rem;
+        flex-direction: column;
+        align-items: center;
+        gap : 2rem;
+    }
+
+    .info {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info p {
+        width: 100%;
+    }
+
+    .line {
+        display: none;
+    }
+}
