@@ -1,5 +1,7 @@
 .destination{
     background: url('../assets/destination/background-destination-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     justify-content: start;
 }
 
@@ -32,6 +34,12 @@
     align-items: center;
     padding: 0 3rem;
     margin-top: 5rem;
+}
+
+.destination-place img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .destination-info {
@@ -158,6 +166,57 @@
 @keyframes fadeOut {
     from { opacity: 1; }
     to { opacity: 0; }
+}
+
+/* Tablet Design */
+
+@media (max-width: 1082px) {
+
+    nav {
+        padding: 0 0 0 3rem;
+    }
+
+    .destination-wrapper {
+        flex-direction: column;
+        gap : 2rem;
+        margin-top: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .destination-place {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .destination-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap : 2rem;
+        text-align: center;
+    }
+
+    .destination-place img {
+        width: 70%;
+        aspect-ratio: 1/1;
+    }
+
+    .destination-header h2{
+        font-size: 1.5rem;
+    }
+}
+
+/* Mobile Design */
+
+@media  (max-width: 668px) {
+    
+}
+
+@media (max-width:532px) {
+    
 }
 
   
