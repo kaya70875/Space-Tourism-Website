@@ -211,12 +211,28 @@
 
 /* Mobile Design */
 
-@media  (max-width: 668px) {
-    
+@media  (max-width: 532px) {
+    nav {
+        padding: 3rem 0 0rem 3rem;
+    }
+
+    .destination-place img {
+        width: 50%;
+        aspect-ratio: 1/1;
+    }
+
+    .destination-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
 }
 
-@media (max-width:532px) {
-    
+@media (max-width : 400px) {
+    .planet-name h2 {
+        font-size: 5rem;
+    }
 }
 
   
