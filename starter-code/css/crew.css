@@ -19,7 +19,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    height: 50%;
+    height: 100%;
     width: 50%;
 }
 
@@ -29,7 +29,7 @@
     justify-content: center;
     align-items: start;
     gap : 2rem;
-    padding: 1em 1em 0 9em;
+    padding: 9em 1em 0 9em;
 }
 
 .info-section h2 {
@@ -105,4 +105,75 @@
 .crew-img img {
     position: relative;
     z-index: 0;
+}
+
+@media(max-width : 1082px) {
+    main {
+        height: 100%;
+    }
+
+    .destination-header {
+        padding-left: 3em;
+        width: 100%;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .crew-content {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        padding-top: 1em;
+    }
+
+    .crew-wrapper {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap : 2rem;
+    }
+
+    .info-section {
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .info-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-section h1 {
+        font-size: 2rem;
+    }
+
+    .info-section p {
+        font-size: 1.2rem;
+        max-width: 35rem;
+    }
+
+    .ellipse-section {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .crew-img::after {
+        display: none;
+    }
+    
+    .crew-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: unset;
+    }
+
+    .crew-img img {
+        width: 95%;
+        height: 95%;
+    }
 }
