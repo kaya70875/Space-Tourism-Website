@@ -19,7 +19,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    height: 100%;
+    height: 70vh;
     width: 50%;
 }
 
@@ -185,6 +185,7 @@
 
     .crew-wrapper {
         gap : 3rem;
+        height: 100%;
     }
 
     .destination-header {
