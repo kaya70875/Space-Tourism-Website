@@ -1,7 +1,6 @@
 const navItems = document.querySelectorAll('.list-item');
 
 const previousItem = localStorage.getItem('activeItem');
-console.log(previousItem);
 if (previousItem) {
     navItems.forEach(item => {
         if(item.textContent.trim() === previousItem.trim()) {

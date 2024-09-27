@@ -1,3 +1,22 @@
+const navButtons = document.querySelectorAll('.ellipse-button');
+
+const previousButton = localStorage.getItem('activeItem');
+if (previousButton) {
+    navButtons.forEach(item => {
+        if(item.textContent.trim() === previousButton.trim()) {
+            item.classList.add('active');
+        }
+    })
+}
+
+navButtons.forEach(item => {
+  item.addEventListener('click' ,function() {
+      navButtons.forEach(el => el.classList.remove('active'));
+      this.classList.add('active');
+      localStorage.setItem('activeItem' , this.textContent.trim());
+  })
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     fetch('./data.json')
       .then(response => response.json())
