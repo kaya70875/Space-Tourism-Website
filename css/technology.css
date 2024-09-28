@@ -39,7 +39,7 @@
     gap : 2rem;
 }
 
-.numbers button {
+.numbers a {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
@@ -50,14 +50,20 @@
     font-weight: 100;
     font-family: 'Bellefair', serif;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.numbers button:hover {
+.numbers a:hover {
     background-color: #979797;
     cursor: pointer;
 }
 
-.numbers button.active {
+.numbers a.active {
     background-color: white;
     color : black;
 }
