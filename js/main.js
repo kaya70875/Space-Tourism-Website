@@ -21,4 +21,5 @@ function setActiveStates(navItemClass) {
 
 setActiveStates('.list-item');
 setActiveStates('.ellipse-button');
+setActiveStates('.tech-button');
   
