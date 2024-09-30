@@ -212,6 +212,10 @@
 /* Mobile Design */
 
 @media  (max-width: 532px) {
+    body {
+        overflow: auto;
+    }
+
     nav {
         padding: 3rem 0 0rem 3rem;
     }
