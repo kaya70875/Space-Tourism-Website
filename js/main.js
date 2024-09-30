@@ -21,14 +21,7 @@ function setActiveStates(navItemClass) {
 
 function handleExploreButton(button) {
     window.location.href = './destination-mars.html';
-    button.classList.add('active');
-    localStorage.setItem('activeItem' , 'DESTINATION');
-    setActiveStates('.list-item');
 }
-
-document.querySelector('.btn').addEventListener('click', function() {
-    handleExploreButton(this);
-});
 
 setActiveStates('.list-item');
 setActiveStates('.ellipse-button');
